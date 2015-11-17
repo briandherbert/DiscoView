@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DiscoViewActivity">
+
+    <com.meetme.discoloader.DiscoView
+        android:id="@+id/discoview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:discoBaseColor="#ff0"
+        app:discoIcon="@drawable/android" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="numsquares"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="odds %"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="freq (100ms)"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <NumberPicker
+            android:id="@+id/numpick_min_squares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <NumberPicker
+            android:id="@+id/numpick_odds_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <NumberPicker
+            android:id="@+id/numpick_freq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <NumberPicker
+            android:id="@+id/numpick_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.meetme.android.palettebar.PaletteBar
+        android:id="@+id/paletteBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+</LinearLayout>

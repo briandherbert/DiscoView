@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="DiscoView">
+        <attr name="discoBaseColor" format="color" />
+        <attr name="discoIcon" format="reference" />
+    </declare-styleable>
+</resources>
